@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Examen Intégration</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/responsive.min.css">
+  </head>
+
+  <body>
+    <!-- Sticky Navbar -->
+    <div class="nav">
+      <div class="debian-logo">
+        <a href="#">
+          <img src="img/debian.png" alt="Debian Logo">
+        </a>
+      </div>
+
+      <ul>
+        <li><a href="#">carrousel</a></li>
+        <li><a href="#gallery">galerie</a></li>
+        <li><a href="#form">contact</a></li>
+        <li><a href="#footer">footer</a></li>
+      </ul>
+    </div>
+
+    <!-- Carrousel -->
+    <main>
+      <div class="slider" id="carrousel">
+        <input type="radio" name="slider-control" class="slider-control" id="slide-1" checked="checked">
+        <input type="radio" name="slider-control" class="slider-control" id="slide-2">
+        <input type="radio" name="slider-control" class="slider-control" id="slide-3">
+
+        <label class="slider-arrow slide-back" for="slide-1"></label>
+        <label class="slider-arrow slide-back" for="slide-2"></label>
+        <label class="slider-arrow slide-back" for="slide-3"></label>
+        <label class="slider-arrow slide-next" for="slide-1"></label>
+        <label class="slider-arrow slide-next" for="slide-2"></label>
+        <label class="slider-arrow slide-next" for="slide-3"></label>
+
+        <div class="slider-inner">
+        <ul class="slides">
+          <li class="slide"><img src="img/carrousel/install.png" alt="Slide 1" width="740" height="360"></li>
+          <li class="slide"><img src="img/carrousel/menu.jpg" alt="Slide 2" width="740" height="360"></li>
+          <li class="slide"><img src="img/carrousel/terminal.png" alt="Slide 3" width="740" height="360"></li>
+        </ul>
+        </div>
+
+        <label class="slider-control-label" for="slide-1"></label>
+        <label class="slider-control-label" for="slide-2"></label>
+        <label class="slider-control-label" for="slide-3"></label>
+      </div>
+    </main>
+
+    <!-- Galerie d'images -->
+    <div class="gallery cf" id="gallery">
+      <div class="center-gallery">
+        <div>
+          <img src="img/galerie/ubuntu.png" alt="Ubuntu">
+        </div>
+        <div>
+          <img src="img/galerie/debian.jpg" alt="Debian">
+        </div>
+        <div>
+          <img src="img/galerie/mint.png" alt="Linux Mint">
+        </div>
+        <div>
+          <img src="img/galerie/fedora.jpg" alt="Fedora">
+        </div>
+        <div>
+          <img src="img/galerie/centos.jpg" alt="CentOS">
+        </div>
+        <div>
+          <img src="img/galerie/archlinux.png" alt="ArchLinux">
+        </div>
+        <div>
+          <img src="img/galerie/redhat.jpg" alt="RedHat">
+        </div>
+        <div>
+          <img src="img/galerie/kali.jpg" alt="Kali Linux">
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <section id="form">
+      <h1>Contactez-nous</h1>
+      <form>
+        <div class="field lastname-box">
+          <input type="text" id="lastname" placeholder="Doe">
+          <label for="lastname">Nom</label>
+          <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field firstname-box">
+          <input type="text" id="firstname" placeholder="John">
+          <label for="firstname">Prénom</label>
+          <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+          <input type="text" id="email" placeholder="nom.prenom@email.com">
+          <label for="email">Email</label>
+          <span class="ss-icon">check</span>
+        </div>
+
+        <input class="button" type="submit" value="Envoyer">
+      </form>
+    </section>
+
+    <div class="footer" id="footer">
+      <ul>
+        <li><a href="#">carrousel</a></li>
+        <li><a href="#gallery">galerie</a></li>
+        <li><a href="#form">contact</a></li>
+        <li><a href="#footer">footer</a></li>
+      </ul>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
