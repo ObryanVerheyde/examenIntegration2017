@@ -6,6 +6,7 @@
 html, body
 {
 	margin: 0;
+  max-width: 100%;
 }
 
 .nav
@@ -104,6 +105,12 @@ main
 .slide
 {
   width: 25%;
+}
+
+.slide > img
+{
+  width: 740px;
+  height: 360px;
 }
 
 .slider-control
